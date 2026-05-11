@@ -53,7 +53,7 @@
     "@biomejs/biome": "2.4.15",
     "@inlang/cli": "^3.1.11",
     "@inlang/paraglide-js": "^2.18.0",
-    "@module-federation/vite": "1.15.1",
+    "@module-federation/vite": "^1.15.4",
     "@tailwindcss/vite": "^4.3.0",
     "@tanstack/react-devtools": "^0.10.3",
     "@tanstack/react-form-devtools": "^0.2.27",
