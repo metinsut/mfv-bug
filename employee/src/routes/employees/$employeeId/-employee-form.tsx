@@ -1,27 +1,8 @@
-import { formOptions } from "@tanstack/react-form";
 import { AreaLoading, useAppForm, Wrapper } from "@workspace/shared";
-import { z } from "zod";
 import { m } from "@/paraglide/messages";
 import { Basics } from "./-basics";
 import { EmployeeFormHeader } from "./-employee-form-header";
-
-export const employeeFormOpts = formOptions({
-  defaultValues: {
-    employeeId: "",
-    firstName: "",
-    lastName: "",
-    email: "",
-  },
-});
-
-export const employeeFormSchema = z.object({
-  employeeId: z.string(),
-  firstName: z.string(),
-  lastName: z.string(),
-  email: z.string(),
-});
-
-export type EmployeeFormValues = z.infer<typeof employeeFormSchema>;
+import { employeeFormOpts, employeeFormSchema } from "./-employee-form-options";
 
 export function EmployeeForm() {
   const form = useAppForm({

@@ -1,21 +1,8 @@
-import { formOptions } from "@tanstack/react-form";
 import { AreaLoading, useAppForm, Wrapper } from "@workspace/shared";
-import z from "zod";
 import { m } from "@/paraglide/messages";
 import { Basics } from "./-basics";
 import { DepartmentFormHeader } from "./-department-form-header";
-
-export const departmentFormOpts = formOptions({
-  defaultValues: {
-    id: "",
-    name: "",
-  },
-});
-
-export const departmentFormSchema = z.object({
-  id: z.string(),
-  name: z.string(),
-});
+import { departmentFormOpts, departmentFormSchema } from "./-department-form-options";
 
 export function DepartmentForm() {
   const form = useAppForm({

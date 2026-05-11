@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle, withForm } from "@workspace/shared";
 import { m } from "@/paraglide/messages";
-import { employeeFormOpts } from "./-employee-form";
+import { employeeFormOpts } from "./-employee-form-options";
 
 export const Basics = withForm({
   ...employeeFormOpts,

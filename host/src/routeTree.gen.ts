@@ -14,7 +14,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as SettingsIndexRouteImport } from './routes/settings/index'
 import { Route as R403IndexRouteImport } from './routes/403/index'
 import { Route as ReportsSplatRouteImport } from './routes/reports/$'
-import { Route as EmployeeSplatRouteImport } from './routes/employee/$'
+import { Route as EmployeeSplatRouteImport } from './routes/employee_.$'
 import { Route as SettingsChangePasswordIndexRouteImport } from './routes/settings/change-password/index'
 
 const DashboardRouteRoute = DashboardRouteRouteImport.update({
@@ -43,7 +43,7 @@ const ReportsSplatRoute = ReportsSplatRouteImport.update({
   getParentRoute: () => rootRouteImport,
 } as any)
 const EmployeeSplatRoute = EmployeeSplatRouteImport.update({
-  id: '/employee/$',
+  id: '/employee_/$',
   path: '/employee/$',
   getParentRoute: () => rootRouteImport,
 } as any)
@@ -76,7 +76,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/dashboard': typeof DashboardRouteRoute
-  '/employee/$': typeof EmployeeSplatRoute
+  '/employee_/$': typeof EmployeeSplatRoute
   '/reports/$': typeof ReportsSplatRoute
   '/403/': typeof R403IndexRoute
   '/settings/': typeof SettingsIndexRoute
@@ -105,7 +105,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/dashboard'
-    | '/employee/$'
+    | '/employee_/$'
     | '/reports/$'
     | '/403/'
     | '/settings/'
@@ -159,8 +159,8 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ReportsSplatRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/employee/$': {
-      id: '/employee/$'
+    '/employee_/$': {
+      id: '/employee_/$'
       path: '/employee/$'
       fullPath: '/employee/$'
       preLoaderRoute: typeof EmployeeSplatRouteImport
