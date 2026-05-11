@@ -1,0 +1,7 @@
+{
+  "extends": "@workspace/config/tsconfig",
+  "compilerOptions": {
+    "jsx": "react-jsx"
+  },
+  "exclude": ["node_modules"]
+}

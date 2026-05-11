@@ -1,0 +1,68 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "files": {
+    "includes": [
+      "**",
+      "!node_modules",
+      "!**/dist",
+      "!**/.__mf__temp",
+      "!**/*.gen.ts",
+      "!turbo.json",
+      "!shared/styles/globals.css",
+      "!**/project.inlang",
+      "!**/src/paraglide"
+    ]
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "correctness": {
+        "noUnusedImports": "error",
+        "noUnusedVariables": "error"
+      }
+    },
+    "includes": ["!**/api"]
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "includes": [
+      "**",
+      "!node_modules",
+      "!**/dist",
+      "!**/.__mf__temp",
+      "!**/*.gen.ts",
+      "!turbo.json",
+      "!shared/styles/globals.css",
+      "!**/project.inlang",
+      "!**/src/paraglide"
+    ],
+    "attributePosition": "auto",
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 100
+  },
+  "javascript": {
+    "jsxRuntime": "reactClassic",
+    "formatter": {
+      "arrowParentheses": "always",
+      "bracketSameLine": false,
+      "bracketSpacing": true,
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "semicolons": "always"
+    }
+  },
+  "json": {
+    "formatter": {
+      "enabled": true
+    }
+  },
+  "css": {
+    "formatter": {
+      "enabled": true
+    }
+  }
+}

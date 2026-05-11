@@ -1,0 +1,16 @@
+node_modules
+dist
+.worktrees
+.DS_Store
+.turbo
+*.tsbuildinfo
+
+# Local environment (secrets)
+.env
+.env.*
+!.env.example
+
+.tanstack
+.turbo
+.__mf__temp
+.superpowers

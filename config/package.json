@@ -1,0 +1,17 @@
+{
+  "name": "@workspace/config",
+  "version": "0.0.1",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "clear": "rm -rf .turbo"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    "./tsconfig": "./tsconfig.json",
+    "./shared-package": "./shared-package.ts",
+    "./vite-config": "./vite-config.ts"
+  }
+}

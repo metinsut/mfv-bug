@@ -1,0 +1,8 @@
+{
+  "extends": "@workspace/config/tsconfig",
+  "exclude": [
+    "node_modules",
+    "docs",
+    ".turbo"
+  ]
+}
