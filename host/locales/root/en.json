@@ -52,5 +52,6 @@
   "roles": "Roles",
   "tenants": "Tenants",
   "searchRoles": "Search roles",
-  "searchTenants": "Search tenants"
+  "searchTenants": "Search tenants",
+  "reports": "Reports"
 }

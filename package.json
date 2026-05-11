@@ -5,6 +5,7 @@
   "workspaces": [
     "host",
     "employee",
+    "reports",
     "shared",
     "config"
   ],

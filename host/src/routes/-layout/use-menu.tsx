@@ -1,4 +1,4 @@
-import { FolderUserIcon, UserCircleIcon } from "@phosphor-icons/react";
+import { ChartBarIcon, FolderUserIcon, UserCircleIcon } from "@phosphor-icons/react";
 import { m } from "@/paraglide/messages";
 
 export function useMenu() {
@@ -12,6 +12,11 @@ export function useMenu() {
       title: m.employee(),
       to: "/employee",
       icon: <FolderUserIcon />,
+    },
+    {
+      title: m.reports(),
+      to: "/reports",
+      icon: <ChartBarIcon />,
     },
   ];
 }

@@ -52,5 +52,6 @@
   "roles": "Roller",
   "tenants": "Kurumlar",
   "searchRoles": "Rol ara",
-  "searchTenants": "Kurum ara"
+  "searchTenants": "Kurum ara",
+  "reports": "Raporlar"
 }

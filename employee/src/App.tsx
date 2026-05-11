@@ -6,5 +6,5 @@ export const router = createRouter({ routeTree, defaultPreload: "intent" });
 
 export default function App() {
   useInitApp();
-  return <RouterProvider router={router} basepath="employee" />;
+  return <RouterProvider router={router} basepath="/employee" />;
 }
