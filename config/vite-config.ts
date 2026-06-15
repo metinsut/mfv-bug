@@ -24,6 +24,7 @@ export const appNames = {
   host: "host",
   employee: "employee",
   reports: "reports",
+  rental: "rental",
 } as const;
 
 export type appNamesType = (typeof appNames)[keyof typeof appNames];
@@ -32,6 +33,7 @@ export const remoteApps = {
   host: { port: 3000 },
   employee: { port: 3004 },
   reports: { port: 3005 },
+  rental: { port: 3006 },
 } as Record<appNamesType, { port: number }>;
 
 export function getRemoteApp(appName: appNamesType) {
