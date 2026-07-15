@@ -1,6 +1,5 @@
 {
   "lockfileVersion": 1,
-  "configVersion": 1,
   "workspaces": {
     "": {
       "name": "micro-frontend",
@@ -62,6 +61,9 @@
     },
     "host": {
       "name": "host",
+    },
+    "rental": {
+      "name": "rental",
     },
     "reports": {
       "name": "reports",
@@ -1169,6 +1171,8 @@
     "recast": ["recast@0.23.11", "", { "dependencies": { "ast-types": "^0.16.1", "esprima": "~4.0.0", "source-map": "~0.6.1", "tiny-invariant": "^1.3.3", "tslib": "^2.0.1" } }, "sha512-YTUo+Flmw4ZXiWfQKGcwwc11KnoRAYgzAE2E7mXKCjSviTKShtxBsN6YUUBB2gtaBzKzeKunxhUwNHQuRryhWA=="],
 
     "remeda": ["remeda@2.34.0", "", {}, "sha512-zL4cEPkLHxwmlDRPyvJZjojpG5M5HXrDiABNKof+dq7kkuyQttP6NrF2uJB0DKIU09K8cTq+sQDlbo2r7mdR5Q=="],
+
+    "rental": ["rental@workspace:rental"],
 
     "reports": ["reports@workspace:reports"],
 
